@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+        <title>examjquery</title>
+        <meta name="description" content="#">
+        <link rel="stylesheet" href="examstyles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				"use strict";
+				$("#consulting").click(function() {
+					$("#toprow").slideToggle();
+				});
+				
+				$("#james").click(function() {
+					$("#snowb").hide();
+				});
+				
+				$("#picturelayout").click(function() {
+					$("#snowb").show();
+				});	
+				
+				$("#theworld").click(function(){
+        		$("#ourgoal").fadeOut("slow");
+    			});	
+				
+				$("#testimonial").hover(function(){
+        		$("#ourgoal").fadeIn("slow");
+    			});
+				
+				$("#but1").click(function() {
+				$("#wrench").slideUp();  
+				}); 
+				 
+				$("#but2").click(function() {
+					$("#wrench2").toggle();  
+				});   
+				
+				$("#but3").click(function() {
+					alert("You have clicked a button!");  
+				});   
+            	$("#home").click(function() {
+            		$("#home").text("This is a new text");
+            	})
+            });
+		</script>
+	</head>
+<body>
+    <div id="wrapper">
+    	<div id="navigation">
+    		<h1 id="james">JAMES <span id="consulting" style="color:#7eb5d9">CONSULTING</span></h1>
+			<ul id="toprow" style="list-style-type:none">
+				<li><a href="#"><span style="color:#7eb5d9">Home</span></a></li>
+				<li><h3><a href="#">About</a></h3></li>
+				<li><h3><a href="#">Services</a></h3></li>
+				<li><h3><a href="#">Projects</a></h3></li>
+				<li><h3><a href="#">Clients</a></h3></li>
+			</ul>
+    	</div>
+    	
+    	<div id="whitefield">
+    		<div id="picturelayout">
+    			<img id="snowb" src="images/main_img.png" alt="snowborder">
+    		</div>
+    		
+    		<div class="moreinfo">
+    			<img id="wrench" src="images/icon.png" alt="icon">
+    			<h1>Services</h1>
+    			<p>You have an idea about where you want your business to go? Need some help getting there? we are the experts at helping our customers take their businesses to the next stage. We look forfard to transformingyour business...</p>
+    			<button id="but1">More Info</button>
+    		</div>
+    		
+    		<div class="moreinfo">
+    			<img id="wrench2" src="images/icon.png" alt="icon">
+    			<h1>Projects</h1>
+    			<p>We worked with Pinktrip, a local fashion retailer, in 2010. They had a dream to take their business to the next level and draw in a national base of customers, while retaining the local feel of their store online. We redesigned...</p>
+    			<button id="but2">More Info</button>
+    		</div>
+    		
+    		<div class="moreinfo">
+    			<img id="wrench3" src="images/icon.png" alt="icon">
+    			<h1>Client</h1>
+    			<p>We have worked with a variety of businesses varying from non-profit to corporate to retail. Although our clients have ranged in size to large corporation, our niche is helping small and medium sized clients discover...</p>
+    			<button id="but3">More Info</button>
+    		</div>
+        	
+        	<div id="theworld">
+        		<h1>THE WORLD CAN BE YOURS!</h1>
+        		<img src="images/building.png" alt="building">
+        	</div>
+        	
+        	<div id="ourgoal">
+        		<p>Our goal at James Consulting is to provide effective solutions designed to boost your business, be it small or a large organzation.</p>
+        		<p>Our consutants design solutions tailored specifically to the neees of your business in order to ensure you your dreams of success.</p>
+        		<p>Check out our custom solutions and services.</p>
+        		<a href="#">Learn more</a>
+        	</div>
+        	
+        	<div id="testimonial">
+        		<h1>TESTIMONIAL</h1>
+        		<div class="quote">
+        			<h3><i>"I'm a testimonial. Click me to edit and add text that says something nice about you and your services."</i></h3>
+        		</div>
+        		<p>Samantha Jones, Project Manager</p>
+        	</div>
+        	
+        	<div id="lowerpage">
+        		<ul style="list-style-type:none">
+    				<li><a id="home" href="#"><h2>Home</h2></a></li>
+    				<li><a href="#"><h2>About</h2></a></li>
+    				<li><a href="#"><h2>Services</h2></a></li>
+    				<li><a href="#"><h2>Projects</h2></a></li>
+    				<li><a href="#"><h2>Clients</h2></a></li>
+				</ul>
+        	</div>
+		</div>
+	</div>
+</body>
+</html>
